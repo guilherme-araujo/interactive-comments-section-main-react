@@ -1,0 +1,14 @@
+.attribution {
+  margin: auto;
+  width: 730px;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  > a {
+    text-decoration: none;
+
+    &:before {
+      content: " ";
+    }
+  }
+}

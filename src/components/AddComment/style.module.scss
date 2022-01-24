@@ -1,0 +1,41 @@
+@use "src/styles/_colors.scss" as *;
+
+.addComment {
+  background-color: $white;
+  min-height: 165px;
+  width: 730px;
+  border-radius: 8px;
+  display: flex;
+  padding: 26px 26px;
+  align-items: center;
+
+  > img {
+    height: 40px;
+    margin-bottom: 52px;
+  }
+
+  > textarea {
+    margin-left: 1rem;
+    border-radius: 8px;
+    border: $light-gray 1px solid;
+    resize: none;
+    padding: 1rem;
+    color: $grayish-blue;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+  }
+  > button {
+    border: none;
+    background-color: $moderate-blue;
+    width: 6.5rem;
+    height: 3rem;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-bottom: auto;
+    cursor: pointer;
+  }
+}

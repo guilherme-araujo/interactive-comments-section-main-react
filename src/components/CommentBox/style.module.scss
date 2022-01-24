@@ -1,0 +1,111 @@
+@use "src/styles/_colors.scss" as *;
+
+.commentBox {
+  background-color: $white;
+  min-height: 165px;
+  max-width: 730px;
+  border-radius: 8px;
+  display: flex;
+  padding: 26px 26px;
+
+  .votes {
+    margin-right: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 18px;
+    background: $very-light-gray;
+    border-radius: 8px;
+    font-weight: 500;
+
+    > div {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $moderate-blue;
+    }
+    button {
+      background: none;
+      cursor: pointer;
+      width: 38px;
+      height: 30px;
+      border: none;
+      color: $light-grayish-blue;
+    }
+  }
+
+  .commentMain {
+    .topLine {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      .user {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        > img {
+          height: 32px;
+        }
+        > p {
+          margin-left: 1rem;
+          font-weight: 500;
+        }
+      }
+
+      display: flex;
+    }
+  }
+
+  .commentTime {
+    color: $grayish-blue;
+  }
+
+  .buttonsWrapper {
+    margin-left: auto;
+
+    > button {
+      border: none;
+      background: none;
+      font-weight: 700;
+      font-size: 1rem;
+      color: $moderate-blue;
+      cursor: pointer;
+      > img {
+        margin-right: 0.5rem;
+      }
+
+      + button {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .deleteButton {
+      color: $soft-red;
+    }
+  }
+
+  .commentText {
+    line-height: 1.5rem;
+    color: $grayish-blue;
+  }
+}
+
+.replyWrapper {
+  display: flex;
+
+  > .comments {
+    > div {
+      + div {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  > .replyDivider {
+    width: 1px;
+    border: 1px solid $light-gray;
+
+    margin: 0px 44px;
+  }
+}

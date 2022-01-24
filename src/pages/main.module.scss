@@ -1,0 +1,14 @@
+.appContainer {
+  width: 750px;
+  margin: auto;
+  padding-top: 65px;
+  padding-bottom: 32px;
+
+  > .comments {
+    > div {
+      + div {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
