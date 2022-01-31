@@ -4,14 +4,18 @@ import { Attribution } from "../components/Attribution";
 import { CommentBox } from "../components/CommentBox";
 
 import styles from "./main.module.scss";
+import data from "../data.json";
 
 export function Main() {
+  console.log(data);
+
   return (
     <>
       <div className={styles.appContainer}>
         <div className={styles.comments}>
-          <CommentBox />
-          <CommentBox replies={true} />
+          {data.comments.map((comment, i) => (
+            <CommentBox {...comment} key={i} />
+          ))}
 
           <AddComment />
         </div>
